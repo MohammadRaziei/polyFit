@@ -1,6 +1,12 @@
 # polyFit
 Same as matlab
 
+## Download:  
+download [PolynomialRegression.h](https://github.com/MohammadRaziei/polyFit/raw/master/PolynomialRegression.h)  
+
+## Usage:
+see [example](https://github.com/MohammadRaziei/polyFit/raw/master/main.cpp)  
+
 ### CODE:  
 ```c++
 int main()
