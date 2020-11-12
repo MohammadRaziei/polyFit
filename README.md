@@ -5,10 +5,10 @@ Same as matlab
 ```c++
 int main()
 {
-    vectDouble x{0, 1, 2, 3, 4};
-    vectDouble y{1, 1.8, 1.3, 2.5, 6.3};
-    vectDouble x2{0, 1, 2, 3, 4};
-    int order = 2;
+    const std::vector<double> x{0, 1, 2, 3, 4};
+    const std::vector<double> y{1, 1.8, 1.3, 2.5, 6.3};
+    const std::vector<double> x2{0, 1, 2, 3, 4};
+    const int order = 2;
     try
     {
         std::cout << "x     : " << x << std::endl;
@@ -16,7 +16,7 @@ int main()
         std::cout << "x2    : " << x2 << std::endl;
         std::cout << "order : " << order << std::endl;
         std::cout << std::string(60, '*') << std::endl;
-        vectDouble coeffs = PolynomialRegression::fit(x, y, order);
+        const std::vector<double> coeffs = PolynomialRegression::fit(x, y, order);
         std::cout << std::endl;
         std::cout << "coeffs = fit(x, y, order) : " << coeffs << std::endl;
         std::cout << "eval(coeffs, x2)          : " << PolynomialRegression::eval(coeffs, x2) << std::endl;
